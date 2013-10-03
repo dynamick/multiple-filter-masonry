@@ -1,10 +1,11 @@
-console.log('This would be the main JS file.');
-(function() {
+$(function() {
+
+  console.log('This would be the main JS file.');
 
   // initialize Masonry
-  var $container = $('#container');
+  var $container = $('#masonryContainer');
 
-  $container.filteredMasonry({
+  $container.multipleFilterMasonry({
     itemSelector: '.challenge',
     filtersGroupSelector:'.filters'
   });

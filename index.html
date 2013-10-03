@@ -13,11 +13,11 @@
     <title>Multiple-filter-masonry by dynamick</title>
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./javascripts/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="/javascripts/masonry.pkgd.js"></script>
-    <script src="/javascripts/multipleFilterMasonry.js"></script>
-    <script src="/javascripts/main.js"></script>
+    <script src="./javascripts/masonry.pkgd.js"></script>
+    <script src="./javascripts/multipleFilterMasonry.js"></script>
+    <script src="./javascripts/main.js"></script>
   </head>
 
   <body>
@@ -37,22 +37,19 @@
 
         <hr>
 
-        <section id="main_content">
+        <section >
           <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Description</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>This is an extension of the great Desandro Masonry plugin that aim to
+            filter the item by multi select filter, such as checkboxes.</p>
+          <p>In the below demo we use the Twitter Bootstrap toggle buttons as a filter toolbar. No button pressed means filter off.</p>
+        </section>
+      </div>
+    </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-
-<h3>Demo</h3>
 <div class="container">
+  <h3>Demo</h3>
   <div class="btn-toolbar filters">
     <div data-toggle="buttons" class="btn-group">
       <label class="btn btn-default">
@@ -77,279 +74,187 @@ $ git checkout gh-pages
   </div>
 </div>
 
+<br/><br/>
 
 <div class="container">
-  <div id="container" class="row" style="position: relative; height: 1215.97px;"><div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" style="position: absolute; left: 0px; top: 0px;">
+  <div id="masonryContainer" class="row" >
+
+    <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
       <div class="panel panel-default">
         <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            12 novembre 2012
-          </span>
-          <h3>
-            <a href="/challenges/1">Calcolo del Pi Greco</a>
-          </h3>
-          <a href="/challenges/1">
-            <img src="/uploads/challenge/cover/1/la-ferrari-312t4-allautodromo-di-modena-per-le-riprese-di-sfide_3.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
+          <h3>Calcolo del Pi Greco</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/blooming-flower-garden.jpg" class="img-rounded img-responsive">
           <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
           <hr>
-          <a href="/categories/3" class="label label-primary">
+          <a href="#" class="label label-primary">
             Letteratura
           </a>
-          &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            12
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              180,00 €
-            </b>
-          </h1>
         </div>
       </div>
-    </div><div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" style="position: absolute; left: 292px; top: 0px;">
+    </div>
+
+    <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
       <div class="panel panel-default">
         <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            12 novembre 2012
-          </span>
-          <h3>
-            <a href="/challenges/2">Quadratura cerchio</a>
-          </h3>
-          <a href="/challenges/2">
-            <img src="/uploads/challenge/cover/2/url4.jpeg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
+          <h3>Quadratura cerchio</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/50000/nahled/morning-after.jpg" class="img-rounded img-responsive">
           <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
           <hr>
-          <a href="/categories/1" class="label label-primary">
+          <a href="#" class="label label-primary">
             Matematica
           </a>
           &nbsp;
-          <a href="/categories/2" class="label label-primary">
+          <a href="#" class="label label-primary">
             Scienza
           </a>
-          &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            6
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              1.000,00 €
-            </b>
-          </h1>
         </div>
       </div>
-    </div><div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 585px; top: 0px;">
+    </div>
+
+    <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
       <div class="panel panel-default">
         <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            19 settembre 2014
-          </span>
-          <h3>
-            <a href="/challenges/3">Creare una meridiana</a>
-          </h3>
-          <a href="/challenges/3">
-            <img src="/uploads/challenge/cover/3/FKF5949GRFNE821.LARGE.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
+          <h3>Creare una meridiana</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/40000/nahled/sunflower-1358668404t2T.jpg" class="img-rounded img-responsive">
           <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
           <hr>
-          <a href="/categories/1" class="label label-primary">
+          <a href="#" class="label label-primary">
+            Matematica
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3>Come creare una astrolabo</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/spider-1309124033y2V.jpg" class="img-rounded img-responsive">
+          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+          <hr>
+          <a href="#" class="label label-primary">
             Matematica
           </a>
           &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            0
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              700,00 €
-            </b>
-          </h1>
-        </div>
-      </div>
-    </div><div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 877px; top: 0px;">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            01 febbraio 2015
-          </span>
-          <h3>
-            <a href="/challenges/4">Come creare una astrolabo</a>
-          </h3>
-          <a href="/challenges/4">
-            <img src="/uploads/challenge/cover/4/astrolabe.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="/categories/1" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="/categories/3" class="label label-primary">
+          <a href="#" class="label label-primary">
             Letteratura
           </a>
-          &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            0
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              1.200,00 €
-            </b>
-          </h1>
         </div>
       </div>
-    </div><div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 292px; top: 516px;">
+    </div>
+
+    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
       <div class="panel panel-default">
         <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            03 maggio 2017
-          </span>
-          <h3>
-            <a href="/challenges/5">Creare uno spettroscopio</a>
-          </h3>
-          <a href="/challenges/5">
-            <img src="/uploads/challenge/cover/5/wrbg-09.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
+          <h3>Creare uno spettroscopio</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/snowflake-pattern.jpg" class="img-rounded img-responsive">
           <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
           <hr>
-          <a href="/categories/1" class="label label-primary">
+          <a href="#" class="label label-primary">
             Matematica
           </a>
           &nbsp;
-          <a href="/categories/3" class="label label-primary">
+          <a href="#" class="label label-primary">
             Letteratura
           </a>
-          &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            0
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              600,00 €
-            </b>
-          </h1>
         </div>
       </div>
-    </div><div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 0px; top: 517px;">
+    </div>
+
+    <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
       <div class="panel panel-default">
         <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            03 maggio 2010
-          </span>
-          <h3>
-            <a href="/challenges/6">Lanciare un pallone spaziale</a>
-          </h3>
-          <a href="/challenges/6">
-            <img src="/uploads/challenge/cover/6/FHTUT7LGQWFKA9G.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
+          <h3>Lanciare un pallone spaziale</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/33-1207145318VcL1.jpg" class="img-rounded img-responsive">
           <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
           <hr>
-          <a href="/categories/1" class="label label-primary">
+          <a href="#" class="label label-primary">
+            Matematica
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3>Telescopio fai da te</h3>
+          <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/colorful-turkish-bowls-871281699663BrO4.jpg" class="img-rounded img-responsive">
+          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+          <hr>
+          <a href="#" class="label label-primary">
             Matematica
           </a>
           &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            0
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              100,00 €
-            </b>
-          </h1>
-        </div>
-      </div>
-    </div><div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position: absolute; left: 585px; top: 564px;">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <span class="badge">
-            <i class="icon-calendar"></i>
-            04 maggio 2016
-          </span>
-          <h3>
-            <a href="/challenges/7">Telescopio fai da te</a>
-          </h3>
-          <a href="/challenges/7">
-            <img src="/uploads/challenge/cover/7/OurDob.jpg" class="img-rounded img-responsive">
-          </a>
-          <div class="sep-xs"></div>
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="/categories/1" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="/categories/3" class="label label-primary">
+          <a href="#" class="label label-primary">
             Letteratura
           </a>
-          &nbsp;
-        </div>
-        <div class="panel-footer">
-          <a href="" class="badge pull-right">
-            <i class="icon-user"></i>
-            0
-            soluzioni
-          </a>
-          <small>Budget a disposizione</small>
-          <h1>
-            <b>
-              3.200,00 €
-            </b>
-          </h1>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+    <div id="container">
+      <div class="inner">
+
+
+        <section  class="clearfix">
 
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>How to use</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>The Javascript part is:</p>
+<pre><code>
+  // initialize Masonry
+  var $container = $('#masonryContainer');
+
+  $container.multipleFilterMasonry({
+    itemSelector: '.challenge',
+    filtersGroupSelector:'.filters'
+  });</code></pre>
+
+<p>The html fiter part is:</p>
+<pre><code>
+  &lt;div class=&quot;btn-toolbar filters&quot;&gt;
+    &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
+      &lt;label class=&quot;btn btn-default&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; value=&quot;Matematica&quot; &gt;
+        Matematica
+      &lt;/label&gt;
+      &lt;label class=&quot;btn btn-default&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; value=&quot;Scienza&quot; &gt;
+        Scienza
+      &lt;/label&gt;
+      &lt;label class=&quot;btn btn-default&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; value=&quot;Letteratura&quot; &gt;
+        Letteratura
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
+      &lt;label class=&quot;btn btn-default&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; value=&quot;mine&quot; &gt;
+        Mine
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<p>... and the masonry items...</p>
+<pre><code>
+  &lt;div id=&quot;masonryContainer&quot; class=&quot;row&quot; &gt;
+    &lt;div class=&quot;Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
+      &lt;h3&gt;Calcolo del Pi Greco&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
+      &lt;h3&gt;Quadratura cerchio&lt;/h3&gt;
+    &lt;/div&gt;
+
+    ...
+
+  &lt;/div&gt;
+</code></pre>
 
 <h3>
 <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>

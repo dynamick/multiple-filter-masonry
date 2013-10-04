@@ -10,6 +10,7 @@ See the demo at this [page](http://dynamick.github.io/multiple-filter-masonry/)
 ### How to use
 
 Include the plugins in your html header.
+
     <script src="javascripts/masonry.pkgd.js"></script>
     <script src="javascripts/multipleFilterMasonry.js"></script>
 
@@ -27,43 +28,45 @@ The **filtersGroupSelector** is the container into which the script search for *
 
 The html fiter part is:
 
-          <div class="btn-toolbar filters">
-            <div data-toggle="buttons" class="btn-group">
-              <label class="btn btn-default">
-                <input type="checkbox" value="Matematica" >
-                Matematica
-              </label>
-              <label class="btn btn-default">
-                <input type="checkbox" value="Scienza" >
-                Scienza
-              </label>
-              <label class="btn btn-default">
-                <input type="checkbox" value="Letteratura" >
-                Letteratura
-              </label>
-            </div>
-            <div data-toggle="buttons" class="btn-group">
-              <label class="btn btn-default">
-                <input type="checkbox" value="mine" >
-                Mine
-              </label>
-            </div>
-          </div>
+    <div class="btn-toolbar filters">
+      <div data-toggle="buttons" class="btn-group">
+        <label class="btn btn-default">
+          <input type="checkbox" value="Matematica" >
+          Matematica
+        </label>
+        <label class="btn btn-default">
+          <input type="checkbox" value="Scienza" >
+          Scienza
+        </label>
+        <label class="btn btn-default">
+          <input type="checkbox" value="Letteratura" >
+          Letteratura
+        </label>
+      </div>
+      <div data-toggle="buttons" class="btn-group">
+        <label class="btn btn-default">
+          <input type="checkbox" value="mine" >
+          Mine
+        </label>
+      </div>
+    </div>
 
 ... and the masonry items...
 
-          <div id="masonryContainer" class="row" >
-            <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
-              <h3>Calcolo del Pi Greco</h3>
-            </div>
-            <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
-              <h3>Quadratura cerchio</h3>
-            </div>
+    <div id="masonryContainer" class="row" >
+      <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+        <h3>Calcolo del Pi Greco</h3>
+      </div>
+      <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+        <h3>Quadratura cerchio</h3>
+      </div>
 
-            ...
+      ...
 
-          </div>
-... where the .challenge class indicate a masonry element. The class .Letteratura, .Matematica, .Scienza are used for filtering.
+    </div>
+
+... where the .challenge class indicate a masonry element. The class .Letteratura, .Matematica, .
+Scienza are used for filtering.
 
 ### Authors and Contributors
 

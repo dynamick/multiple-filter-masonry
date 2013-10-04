@@ -17,7 +17,7 @@ The Javascript part is:
           $container.multipleFilterMasonry({
             itemSelector: '.challenge',
             filtersGroupSelector:'.filters'
-          });`</pre>
+          });
 
 The **filtersGroupSelector** is the container into which the script search for **checkboxes**. For every input[type=checkbox] found, it will be attached an onclick event that will trigger the filtering. The **value of checkboxes** will be matched on the **class** of every masonry elements.
 

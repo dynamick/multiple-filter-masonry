@@ -23,45 +23,42 @@ The **filtersGroupSelector** is the container into which the script search for *
 
 The html fiter part is:
 
-        <pre>`
-          &lt;div class=&quot;btn-toolbar filters&quot;&gt;
-            &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
-              &lt;label class=&quot;btn btn-default&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; value=&quot;Matematica&quot; &gt;
+          <div class="btn-toolbar filters">
+            <div data-toggle="buttons" class="btn-group">
+              <label class="btn btn-default">
+                <input type="checkbox" value="Matematica" >
                 Matematica
-              &lt;/label&gt;
-              &lt;label class=&quot;btn btn-default&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; value=&quot;Scienza&quot; &gt;
+              </label>
+              <label class="btn btn-default">
+                <input type="checkbox" value="Scienza" >
                 Scienza
-              &lt;/label&gt;
-              &lt;label class=&quot;btn btn-default&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; value=&quot;Letteratura&quot; &gt;
+              </label>
+              <label class="btn btn-default">
+                <input type="checkbox" value="Letteratura" >
                 Letteratura
-              &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
-              &lt;label class=&quot;btn btn-default&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; value=&quot;mine&quot; &gt;
+              </label>
+            </div>
+            <div data-toggle="buttons" class="btn-group">
+              <label class="btn btn-default">
+                <input type="checkbox" value="mine" >
                 Mine
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        `</pre>
+              </label>
+            </div>
+          </div>
 
 ... and the masonry items...
 
-        <pre>`
-          &lt;div id=&quot;masonryContainer&quot; class=&quot;row&quot; &gt;
-            &lt;div class=&quot;Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
-              &lt;h3&gt;Calcolo del Pi Greco&lt;/h3&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
-              &lt;h3&gt;Quadratura cerchio&lt;/h3&gt;
-            &lt;/div&gt;
+          <div id="masonryContainer" class="row" >
+            <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+              <h3>Calcolo del Pi Greco</h3>
+            </div>
+            <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+              <h3>Quadratura cerchio</h3>
+            </div>
 
             ...
 
-          &lt;/div&gt;
+          </div>
 
 ### Authors and Contributors
 

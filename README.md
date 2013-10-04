@@ -9,15 +9,19 @@ See the demo at this [page](http://dynamick.github.io/multiple-filter-masonry/)
 
 ### How to use
 
-The Javascript part is:
+Include the plugins in your html header.
+    <script src="javascripts/masonry.pkgd.js"></script>
+    <script src="javascripts/multipleFilterMasonry.js"></script>
 
-          // initialize Masonry
-          var $container = $('#masonryContainer');
+Add to your custom javascript, the following lines:
 
-          $container.multipleFilterMasonry({
-            itemSelector: '.challenge',
-            filtersGroupSelector:'.filters'
-          });
+    // initialize Masonry
+    var $container = $('#masonryContainer');
+
+    $container.multipleFilterMasonry({
+      itemSelector: '.challenge',
+      filtersGroupSelector:'.filters'
+    });
 
 The **filtersGroupSelector** is the container into which the script search for **checkboxes**. For every input[type=checkbox] found, it will be attached an onclick event that will trigger the filtering. The **value of checkboxes** will be matched on the **class** of every masonry elements.
 
@@ -59,6 +63,7 @@ The html fiter part is:
             ...
 
           </div>
+... where the .challenge class indicate a masonry element. The class .Letteratura, .Matematica, .Scienza are used for filtering.
 
 ### Authors and Contributors
 

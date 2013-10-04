@@ -21,260 +21,253 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
+    <div id="container" class="container">
 
-        <header>
-          <h1>Multiple-filter-masonry</h1>
-          <h2>This script extend the great Desandro Masonry plugin adding the ability to filter elements using multiple filter (checkbox) </h2>
-        </header>
+      <header>
+        <h1>Multiple Filter Masonry</h1>
+        <h2>This script extends the great <a href="http://masonry.desandro.com/">DeSandro Masonry plugin</a> by adding the ability to <strong>filter elements</strong> using multiple filters (checkbox) </h2>
+      </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/dynamick/multiple-filter-masonry/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/dynamick/multiple-filter-masonry/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/dynamick/multiple-filter-masonry" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+      <section id="downloads" class="clearfix">
+        <a href="https://github.com/dynamick/multiple-filter-masonry/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+        <a href="https://github.com/dynamick/multiple-filter-masonry/tarball/master" id="download-tar-gz" class="button"><span>Dwnload tar.gz</span></a>
+        <a href="https://github.com/dynamick/multiple-filter-masonry" id="view-on-github" class="button"><span>View on GitHub</span></a>
+      </section>
 
-        <hr>
+      <hr>
 
-        <section >
-          <h3>
-          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Description</h3>
+      <section >
+        <h3>
+        <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Description</h3>
 
-          <p>This is an extension of the great Desandro Masonry plugin that aim to
-            filter the item by multi select filter, such as checkboxes.</p>
-          <p>In the below demo we use the Twitter Bootstrap toggle buttons as a filter toolbar. No button pressed means filter off.</p>
-        </section>
-      </div>
-    </div>
+        <p>This is an extension of the great <a href="http://masonry.desandro.com/">Desandro Masonry plugin</a> that aim to
+          <strong>filter</strong> items using <strong>checkboxes</strong>.</p>
+        <p>In the below demo we use the <strong>Twitter Bootstrap toggle buttons</strong> as a filter toolbar. Click one or more buttons and the items will be filtered on the fly. No button pressed disable any filter and all items will be displayed.</p>
+      </section>
 
-<div class="container">
-  <h3>Demo</h3>
-  <div class="btn-toolbar filters">
-    <div data-toggle="buttons" class="btn-group">
-      <label class="btn btn-default">
-        <input type="checkbox" value="Matematica" name="Matematica" id="cat-Matematica">
-        Matematica
-      </label>
-      <label class="btn btn-default">
-        <input type="checkbox" value="Scienza" name="Scienza" id="cat-Scienza">
-        Scienza
-      </label>
-      <label class="btn btn-default">
-        <input type="checkbox" value="Letteratura" name="Letteratura" id="cat-Letteratura">
-        Letteratura
-      </label>
-    </div>
-    <div data-toggle="buttons" class="btn-group">
-      <label class="btn btn-default">
-        <input type="checkbox" value="mine" name="mine" id="mine">
-        Progetti a cui partecipo
-      </label>
-    </div>
-  </div>
-</div>
+      <h3>Demo</h3>
 
-<br/><br/>
-
-<div class="container">
-  <div id="masonryContainer" class="row" >
-
-    <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Calcolo del Pi Greco</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/blooming-flower-garden.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Letteratura
-          </a>
+      <div class="btn-toolbar filters">
+        <div data-toggle="buttons" class="btn-group">
+          <label class="btn btn-default">
+            <input type="checkbox" value="Matematica" >
+            Math
+          </label>
+          <label class="btn btn-default">
+            <input type="checkbox" value="Scienza" >
+            Science
+          </label>
+          <label class="btn btn-default">
+            <input type="checkbox" value="Letteratura" >
+            Literature
+          </label>
+        </div>
+        <div data-toggle="buttons" class="btn-group">
+          <label class="btn btn-default">
+            <input type="checkbox" value="mine" >
+            Mine
+          </label>
         </div>
       </div>
-    </div>
 
-    <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Quadratura cerchio</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/50000/nahled/morning-after.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="#" class="label label-primary">
-            Scienza
-          </a>
+      <br/>
+
+      <div id="masonryContainer" class="row" >
+
+        <div class="Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Calcolo del Pi Greco</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/blooming-flower-garden.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Letteratura
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Quadratura cerchio</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/50000/nahled/morning-after.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+              &nbsp;
+              <a href="#" class="label label-primary">
+                Scienza
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Creare una meridiana</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/40000/nahled/sunflower-1358668404t2T.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Come creare una astrolabo</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/spider-1309124033y2V.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+              &nbsp;
+              <a href="#" class="label label-primary">
+                Letteratura
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Creare uno spettroscopio</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/snowflake-pattern.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+              &nbsp;
+              <a href="#" class="label label-primary">
+                Letteratura
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Lanciare un pallone spaziale</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/33-1207145318VcL1.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3>Telescopio fai da te</h3>
+              <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/colorful-turkish-bowls-871281699663BrO4.jpg" class="img-rounded img-responsive">
+              <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
+              <hr>
+              <a href="#" class="label label-primary">
+                Matematica
+              </a>
+              &nbsp;
+              <a href="#" class="label label-primary">
+                Letteratura
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Creare una meridiana</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/40000/nahled/sunflower-1358668404t2T.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Come creare una astrolabo</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/spider-1309124033y2V.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="#" class="label label-primary">
-            Letteratura
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Creare uno spettroscopio</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/20000/nahled/snowflake-pattern.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="#" class="label label-primary">
-            Letteratura
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Lanciare un pallone spaziale</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/33-1207145318VcL1.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="Letteratura Matematica challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Telescopio fai da te</h3>
-          <img src="http://www.publicdomainpictures.net/pictures/10000/nahled/colorful-turkish-bowls-871281699663BrO4.jpg" class="img-rounded img-responsive">
-          <p>Get things done faster. Deploy an SSD cloud server in less than 55 seconds with a dedicated IP and root access.</p>
-          <hr>
-          <a href="#" class="label label-primary">
-            Matematica
-          </a>
-          &nbsp;
-          <a href="#" class="label label-primary">
-            Letteratura
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <div id="container">
-      <div class="inner">
 
 
-        <section  class="clearfix">
+
+      <section  class="clearfix">
 
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>How to use</h3>
+        <h3>
+        <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>How to use</h3>
 
-<p>The Javascript part is:</p>
-<pre><code>
-  // initialize Masonry
-  var $container = $('#masonryContainer');
+        <p>The Javascript part is:</p>
+        <pre><code>
+          // initialize Masonry
+          var $container = $('#masonryContainer');
 
-  $container.multipleFilterMasonry({
-    itemSelector: '.challenge',
-    filtersGroupSelector:'.filters'
-  });</code></pre>
+          $container.multipleFilterMasonry({
+            itemSelector: '.challenge',
+            filtersGroupSelector:'.filters'
+          });</code></pre>
+        <p>The <strong>filtersGroupSelector</strong> is the container into which the script search for <strong>checkboxes</strong>. For every input[type=checkbox] found, it will be attached an onclick event that will trigger the filtering. The <strong>value of checkboxes</strong> will be matched on the <strong>class</strong> of every masonry elements.</p>
 
-<p>The html fiter part is:</p>
-<pre><code>
-  &lt;div class=&quot;btn-toolbar filters&quot;&gt;
-    &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
-      &lt;label class=&quot;btn btn-default&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; value=&quot;Matematica&quot; &gt;
-        Matematica
-      &lt;/label&gt;
-      &lt;label class=&quot;btn btn-default&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; value=&quot;Scienza&quot; &gt;
-        Scienza
-      &lt;/label&gt;
-      &lt;label class=&quot;btn btn-default&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; value=&quot;Letteratura&quot; &gt;
-        Letteratura
-      &lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
-      &lt;label class=&quot;btn btn-default&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; value=&quot;mine&quot; &gt;
-        Mine
-      &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
+        <p>The html fiter part is:</p>
+        <pre><code>
+          &lt;div class=&quot;btn-toolbar filters&quot;&gt;
+            &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
+              &lt;label class=&quot;btn btn-default&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; value=&quot;Matematica&quot; &gt;
+                Matematica
+              &lt;/label&gt;
+              &lt;label class=&quot;btn btn-default&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; value=&quot;Scienza&quot; &gt;
+                Scienza
+              &lt;/label&gt;
+              &lt;label class=&quot;btn btn-default&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; value=&quot;Letteratura&quot; &gt;
+                Letteratura
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div data-toggle=&quot;buttons&quot; class=&quot;btn-group&quot;&gt;
+              &lt;label class=&quot;btn btn-default&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; value=&quot;mine&quot; &gt;
+                Mine
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
 
-<p>... and the masonry items...</p>
-<pre><code>
-  &lt;div id=&quot;masonryContainer&quot; class=&quot;row&quot; &gt;
-    &lt;div class=&quot;Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
-      &lt;h3&gt;Calcolo del Pi Greco&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
-      &lt;h3&gt;Quadratura cerchio&lt;/h3&gt;
-    &lt;/div&gt;
+        <p>... and the masonry items...</p>
+        <pre><code>
+          &lt;div id=&quot;masonryContainer&quot; class=&quot;row&quot; &gt;
+            &lt;div class=&quot;Letteratura challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
+              &lt;h3&gt;Calcolo del Pi Greco&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;Matematica Scienza challenge col-lg-3 col-md-4 col-sm-6 col-xs-12 mine&quot; &gt;
+              &lt;h3&gt;Quadratura cerchio&lt;/h3&gt;
+            &lt;/div&gt;
 
-    ...
+            ...
 
-  &lt;/div&gt;
-</code></pre>
+          &lt;/div&gt;
+        </code></pre>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>This script is a modified version of kevincantstop's script, <a href="https://github.com/kevincantstop/masonry-filtering">masonry-filtering</a>, and most of the work was done by him.</p>
+<p>Many thanks for <a href="http://masonry.desandro.com/">DeSandro Masonry</a> plugin, on which my script depends.</p>
+
+<p>You can follow me at <a href="https://twitter.com/dynamick" class="user-mention">@dynamick</a> or reading my blog, <a href="http://www.dynamick.it">Dynamick</a>, or become a fan of my <a href="http://www.facebook.com/dynamick.it">facebook page</a>. </p>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Having trouble with Multiple Filter Masonry? Check out the documentation at <a href="http://dynamick.github.io/multiple-filter-masonry/">this page</a> or contact <a href="mailto:info@dynamick.it">info AT dynamick it</a> and we’ll help you sort it out.</p>
         </section>
 
         <footer>
           Multiple-filter-masonry is maintained by <a href="https://github.com/dynamick">dynamick</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+          This page was first generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a> and then customized by me.
         </footer>
 
 

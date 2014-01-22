@@ -1,4 +1,5 @@
-!function($){
+(function($){
+  'use strict';
   $.fn.multipleFilterMasonry = function(options){
     var cache=[];
 
@@ -8,7 +9,7 @@
         cache.push($(this));
       });
       $container.masonry(options);
-    }
+    };
 
     //filter items in cache
     var filterItems = function(selector){
@@ -19,9 +20,9 @@
             if($.inArray(cache[item], result) === -1) result.push(cache[item]);
           }
         });
-      })
+      });
       return result;
-    }
+    };
 
     //reload masonry
     var reload = function($container,items){
@@ -31,7 +32,7 @@
       });
       $container.masonry('reloadItems');
       $container.masonry();
-    }
+    };
 
     var proc = function($container){
       $(options.filtersGroupSelector).find('input[type=checkbox]').each(function(){
@@ -47,14 +48,14 @@
             items = filterItems(selector);
           }
           reload($container,items);
-        })
-      })
-    }
+        });
+      });
+    };
 
     return this.each(function() {
       var $$ = $(this);
       init($$);
       proc($$);
     });
-  }
-}(window.jQuery)
+  };
+}(window.jQuery));

@@ -84,6 +84,8 @@
       });
 
       hashFilter($container);
+      $(options.filtersGroupSelector).children().removeClass('selected');
+      $('.filters li[data-filter='+window.location.hash.replace("#", "")+']').addClass('selected');
     };
 
     return this.each(function() {

@@ -10,5 +10,4 @@
         // set the selectorType to use <ul> instead of inputs
         selectorType: 'list'
       });
-
     });

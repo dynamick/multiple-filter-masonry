@@ -3,6 +3,8 @@
   $.fn.multipleFilterMasonry = function(options){
     var cache=[];
     var filters = [];
+    // layoutComplete is true for the first filter change
+    var layoutComplete = true;
 
     if(options.selectorType === 'list') {
       $(options.filtersGroupSelector).children().each(function() {
@@ -15,7 +17,11 @@
       $container.find(options.itemSelector).each(function(){
         cache.push($(this));
       });
-      $container.masonry(options);
+      $container
+        .masonry(options)
+        .on("layoutComplete", function () {
+          layoutComplete = true;
+        });
     };
 
     //filter items in cache
@@ -52,17 +58,21 @@
     var proc = function($container){
       $(options.filtersGroupSelector).find('input[type=checkbox]').each(function(){
         $(this).change(function(){
-          var selector = [];
-          $(options.filtersGroupSelector).find('input[type=checkbox]').each( function() {
-            if ( $(this).is(':checked') ) {
-              selector.push( '.' + $(this).val() );
+          if (layoutComplete) {
+            layoutComplete = false;
+
+            var selector = [];
+            $(options.filtersGroupSelector).find('input[type=checkbox]').each( function() {
+              if ( $(this).is(':checked') ) {
+                selector.push( '.' + $(this).val() );
+              }
+            });
+            var items = cache;
+            if (selector.length > 0) {
+              items = filterItems(selector);
             }
-          });
-          var items = cache;
-          if (selector.length > 0) {
-            items = filterItems(selector);
+            reload($container,items);
           }
-          reload($container,items);
         });
       });
     };
@@ -70,16 +80,20 @@
     var procUL = function($container){
       $(options.filtersGroupSelector).children().each(function(){
         $(this).click(function(){
-          $(options.filtersGroupSelector).children().removeClass('selected');
-          window.location.hash = $(this).data('filter');
-          var selector = [];
-          selector.push( '.' + $(this).data('filter') );
-          $(this).addClass('selected');
-          var items = cache;
-          if (selector.length > 0) {
-            items = filterItems(selector);
+          if (layoutComplete) {
+              layoutComplete = false;
+
+            $(options.filtersGroupSelector).children().removeClass('selected');
+            window.location.hash = $(this).data('filter');
+            var selector = [];
+            selector.push('.' + $(this).data('filter'));
+            $(this).addClass('selected');
+            var items = cache;
+            if (selector.length > 0) {
+              items = filterItems(selector);
+            }
+            reload($container, items);
           }
-          reload($container,items);
         });
       });
 

@@ -35,7 +35,7 @@
     var reload = function($container,items){
       $container.empty();
       $(items).each(function(){
-        $($container).append($(this));
+        $container.append($(this));
       });
       $container.masonry('reloadItems');
       $container.masonry();

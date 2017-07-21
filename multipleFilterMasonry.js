@@ -47,7 +47,7 @@
       if($.inArray(hash, filters) !== -1) {
         reload($container, $('.' + hash));
       }
-    }
+    };
 
     var proc = function($container){
       $(options.filtersGroupSelector).find('input[type=checkbox]').each(function(){
